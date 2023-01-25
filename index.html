@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f9c49fda5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form id="search-form">
+            <div class="row search">
+              <div class="form-group col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter city name"
+                  id="city-input"
+                />
+              </div>
+              <div>
+                <button type="submit" class="btn col">Search</button>
+              </div>
+            </div>
+
+            <div class="row current">
+              <div class="col-9 header">
+                <div class="row">
+                  <div class="col-6 place" id="city"></div>
+                  <div class="col-3 time" id="day-and-time"></div>
+                  <div class="col-3">
+                    <button
+                      class="btn col current"
+                      id="current-location-button"
+                    >
+                      Current📍
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col temp" id="current-temp"></div>
+                  <div class="col weather">
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="description"></span>
+                  </div>
+                  <div class="col change">
+                    <a href="#" id="celsius">°C</a> <br />
+                    <a href="#" id="fahrenheit">°F</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 more-info">
+                Wind: <span id="wind"></span>km/h
+                <br />
+                Humidity: <span id="humidity"></span>%
+              </div>
+            </div>
+            <div class="row future">
+              <div class="col day first">
+                <div class="name">Thursday</div>
+
+                <i class="fa-solid fa-cloud-rain"></i>
+                <div class="temp">4°C</div>
+              </div>
+              <div class="col day second">
+                <div class="name">Friday</div>
+
+                <i class="fa-solid fa-cloud"></i>
+                <div class="temp">3°C</div>
+              </div>
+              <div class="col day third">
+                <div class="name">Saturday</div>
+
+                <i class="fa-solid fa-snowflake"></i>
+
+                <div class="temp">0°C</div>
+              </div>
+
+              <div class="col day fourth">
+                <div class="name">Sunday</div>
+
+                <i class="fa-solid fa-cloud"></i>
+
+                <div class="temp">5°C</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

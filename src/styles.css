@@ -1,0 +1,83 @@
+body {
+  background-color: #7ec7cc86;
+}
+.search button {
+  background-color: #7ec7cc;
+  color: white;
+}
+.current button {
+  background-color: #5d9194;
+  color: white;
+
+  margin-top: 10px;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+}
+.card {
+  padding: 20px;
+  background-color: white;
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.current {
+  margin-bottom: 30px;
+}
+.current .temp {
+  font-size: 60px;
+}
+.current .place {
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 0;
+}
+.current .time {
+  font-size: 15px;
+  font-weight: 100;
+  padding-left: 0;
+  margin-top: 27px;
+  color: rgba(0, 0, 0, 0.597);
+}
+.current .more-info {
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 80px;
+  color: rgba(0, 0, 0, 0.597);
+}
+.current .weather {
+  font-size: 25px;
+  margin-top: 25px;
+}
+.current .change {
+  font-size: 30px;
+  margin-top: 20px;
+  border-left: 1px dotted;
+  color: rgba(1, 1, 1, 0.65);
+}
+.future {
+  border-top: 1px solid rgb(202, 202, 202);
+}
+.future .day {
+  text-align: center;
+}
+.future .day .name {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.future i {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.329);
+}
+
+.future .day .temp {
+  font-size: 20px;
+  font-weight: 500;
+}
