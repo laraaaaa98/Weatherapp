@@ -49,9 +49,8 @@ body {
   margin-top: 80px;
   color: rgba(0, 0, 0, 0.597);
 }
-.current .weather {
-  font-size: 25px;
-  margin-top: 25px;
+.weather-description {
+  padding-top: 34px;
 }
 .current .change {
   font-size: 30px;
@@ -85,4 +84,8 @@ body {
   text-align: center;
   margin-top: 10px;
   font-size: 16px;
+}
+
+.current-icon {
+  font-size: 5px;
 }
