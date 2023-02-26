@@ -89,3 +89,13 @@ body {
 .current-icon {
   font-size: 5px;
 }
+
+.change .active {
+  color: black;
+  cursor: default;
+}
+
+.change .active:hover {
+  text-decoration: none;
+  color: black;
+}
